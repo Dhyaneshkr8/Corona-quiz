@@ -14,14 +14,58 @@
   <h1>COVID-19 QUIZ</h1>
   <img class="corona" src="Corona.jpg">
 
-
+  <br>
+  <div class="timer hide">
+    <h2 class="timeName"><u>TIME</u></h2>
+    <p id="clockdiv">03 : 00</p>
+  </div>
 
   <div class="quiz">
-      <br><br><br><br><br>
+    <h3 class="enter">ENTER YOUR NAME</h3>
+    <input class="name" type="text" name="Name" value=""><br><br><br><br>
     <input type="submit" class="start margin" value="START QUIZ">
   </div>
   <p class="stat"></p>
 
+  <div class="sidebar hide">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">⬇ Questions</button><br>
+      <div id="myDropdown" class="dropdown-content">
+        <table cellspacing="5" class="sidebarNav">
+          <tr>
+            <td class="nav nqn1" onclick="currentSlide(1)">1</td>
+          </tr>
+          <tr>
+            <td class="nav nqn2" onclick="currentSlide(2)">2</td>
+          </tr>
+          <tr>
+            <td class="nav nqn3" onclick="currentSlide(3)">3</td>
+          </tr>
+          <tr>
+            <td class="nav nqn4" onclick="currentSlide(4)">4</td>
+          </tr>
+          <tr>
+            <td class="nav nqn5" onclick="currentSlide(5)">5</td>
+          </tr>
+          <tr>
+            <td class="nav nqn6" onclick="currentSlide(6)">6</td>
+          </tr>
+          <tr>
+            <td class="nav nqn7" onclick="currentSlide(7)">7</td>
+          </tr>
+          <tr>
+            <td class="nav nqn8" onclick="currentSlide(8)">8</td>
+          </tr>
+          <tr>
+            <td class="nav nqn9" onclick="currentSlide(9)">9</td>
+          </tr>
+          <tr>
+            <td class="nav nqn10" onclick="currentSlide(10)">10</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
 
   <div class="slideshow-container hide">
 
@@ -269,7 +313,7 @@
 
     <a class="prev" onclick="plusSlides(-1)">&#10094; PREVIOUS</a>
     <a class="next" onclick="plusSlides(1)">NEXT &#10095;</a>
-    <br>
+  <br>
   </div>
 
 
@@ -284,7 +328,7 @@
     <span class="dot" onclick="currentSlide(8)"></span>
     <span class="dot" onclick="currentSlide(9)"></span>
     <span class="dot" onclick="currentSlide(10)"></span>
-    <br><br>
+      <br><br>
   </div>
 
   <div class="end">
@@ -293,10 +337,41 @@
 
   <div class="scoreBoard hide">
     <h3 class="score"><u>SCORE CARD</u></h3>
+    <h3 class="nameing"></h3>
     <h3 class="scoring"></h3>
     <h3 class="crtQns"></h3>
     <h3 class="ratiocrt"></h3>
-    <br><br><br>
+    <br><br>
+
+    <h3 class="titleHighscore"><u>HIGH SCORE</u></h3>
+    <table class="highScore" cellspacing="0">
+      <tr class="high1">
+        <td class="name1 white"></td>
+        <td class="score1 white"></td>
+        <td class="dateTime1 white"></td>
+      </tr>
+      <tr class="high2">
+        <td class="name2 white"></td>
+        <td class="score2 white"></td>
+        <td class="dateTime2 white"></td>
+      </tr>
+      <tr class="high3">
+        <td class="name3 white"></td>
+        <td class="score3 white"></td>
+        <td class="dateTime3 white"></td>
+      </tr>
+      <tr class="high4">
+        <td class="name4 white"></td>
+        <td class="score4 white"></td>
+        <td class="dateTime4 white"></td>
+      </tr>
+      <tr class="high5">
+        <td class="name5 white"></td>
+        <td class="score5 white"></td>
+        <td class="dateTime5 white"></td>
+      </tr>
+    </table>
+
   </div>
 
 
@@ -309,3 +384,4 @@
 </body>
 
 </html>
+
