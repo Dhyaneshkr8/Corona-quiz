@@ -49,9 +49,8 @@ button {
   height: 180px;
   width: 240px;
   display: block;
-margin-left: auto;
-margin-right: auto;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .outer-box {
@@ -251,8 +250,6 @@ margin-right: auto;
   padding-bottom: 5px;
 }
 
-
-
 footer {
   padding-bottom: 20px;
   text-align: center;
@@ -261,14 +258,13 @@ footer {
   text-shadow: 1px 0 #DA0463;
 }
 
-
 .score {
   font-size: 2.5rem;
   font-family: "Arvo";
   text-align: center;
   color: white;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .scoring {
@@ -279,43 +275,181 @@ footer {
   text-align: center;
 }
 
+.sp {
+  color: white;
+  text-align: center;
+}
+
+.sidebar {
+  text-align: center;
+  position: absolute;
+  top: 400px;
+  color: white;
+  padding: 5px;
+}
+
+.nav {
+  font-size: 1rem;
+  border: solid;
+  border-width: 2px;
+  height: 8px;
+  width: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}
+
+.dropbtn {
+  background-color: #993300;
+  color: white;
+  padding: 8px;
+  font-size: 20px;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #990000;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 45px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
 .show {
   display: block;
 }
 
-.stat
-{
+.nav:hover {
+  background-color: black;
+  color: white;
+}
+
+.sidebarNav {
+  /* background-color: #283149; */
+  background-image: url("blue.jpg");
+  border: none;
+}
+
+#clockdiv {
+  font-size: 2rem;
+}
+
+.timer {
+  background-color: white;
+  border: solid;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  right: 80px;
+}
+
+.stat {
   text-align: center;
 }
 
-.ratiocrt
-{
+.ratiocrt, .titleHighscore {
   font-size: 1.5rem;
   font-family: "Arvo";
   text-align: center;
   color: white;
 }
 
-.crtQns
-{
+.crtQns {
   font-size: 1.5rem;
   font-family: "Arvo";
   text-align: center;
   color: white;
 }
 
+.highScore {
+  height: 200px;
+  width: 500px;
+  /* border: solid;
+  border-width: 3px;
+  border-color: black; */
+}
 
-@media (max-width:700px) and (min-width:600px)
-{
-  h1
-  {
+.white {
+  font-size: 1.25rem;
+  height: 50px;
+  width: 100px;
+  border-color: black;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+@media (max-width:700px) and (min-width:600px) {
+  h1 {
     font-size: 3rem;
   }
 
-  .corona
-  {
+  .corona {
     height: 120px;
     width: 160px;
+  }
+
+  .timer {
+    font-size: 0.75rem;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sidebar {
+    top: 20px;
+  }
+
+  .nav {
+    height: 5px;
+    width: 5px;
+    font-size: 0.75rem;
+    border: solid;
+    border-width: 1px;
+    padding: 5px;
+  }
+
+  .dropdown-content {
+    min-width: 27px;
   }
 
   .outer-box {
@@ -327,29 +461,58 @@ footer {
     font-size: 1.25rem;
   }
 
-  .prev, .next
-  {
+  .prev, .next {
     padding: 12px;
     margin-top: -22px;
     font-weight: bold;
     font-size: 0.75rem;
   }
 
+  .dropbtn {
+    font-size: 15px;
+  }
+
+  #clockdiv {
+    font-size: 1.25rem;
+  }
 }
 
-
-
-@media (max-width:600px)
-{
-  h1
-  {
+@media (max-width:600px) {
+  h1 {
     font-size: 3rem;
   }
 
-  .corona
-  {
+  .corona {
     height: 120px;
     width: 160px;
+  }
+
+  .timer {
+    font-size: 0.75rem;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sidebar {
+    top: 100px;
+  }
+
+  .nav {
+    height: 3px;
+    width: 3px;
+    font-size: 0.5rem;
+    border: solid;
+    border-width: 1px;
+    padding: 5px;
+  }
+
+  .dropdown-content {
+    min-width: 20px;
   }
 
   .outer-box {
@@ -361,22 +524,26 @@ footer {
     font-size: 1rem;
   }
 
-  .prev, .next
-  {
+  .prev, .next {
     padding: 12px;
     margin-top: -22px;
     font-weight: bold;
     font-size: 0.70rem;
   }
 
+  .dropbtn {
+    font-size: 15px;
+  }
 
-  .highScore
-  {
+  #clockdiv {
+    font-size: 1.25rem;
+  }
+
+  .highScore {
     height: 160px;
     width: 400px;
     /* border: solid;
     border-width: 3px;
     border-color: black; */
   }
-
 }
