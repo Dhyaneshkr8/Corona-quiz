@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box
+}
+
+/* body {font-family: Verdana, sans-serif; margin:0} */
+.mySlides {
+  display: none
+}
+
+img {
+  margin-top: 0;
+  margin-bottom: 0;
+  /* margin-left: 460px; */
+  border-radius: 40px;
+  border-color: white;
+  border-width: thick;
+  border-style: solid;
+}
+
+body {
+  /* background-color: #283149; */
+  background-image: url("Blue-background.jpg");
+}
+
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #DBEDF3;
+  font-family: "Arvo";
+  text-shadow: 3px 0 #DA0463;
+}
+
+td {
+  border-color: black;
+  border: solid;
+}
+
+button {
+  text-align: center;
+}
+
+.corona {
+  height: 180px;
+  width: 240px;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.outer-box {
+  height: 500px;
+  width: 600px;
+  text-align: center;
+  border: solid;
+  border-width: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.inner-box {
+  font-size: 2rem;
+  border: solid;
+  text-align: center;
+  border-color: black;
+  border-width: 20px;
+  background-color: gray;
+  border-radius: 7px;
+}
+
+.op1, .op2, .op3, .op4 {
+  background-color: lightblue;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  /* border-radius: 0 3px 3px 0; */
+  user-select: none;
+  font-size: 1.5rem;
+  font-family: "Arvo";
+  text-align: center;
+  text-shadow: 1px 0 #DA0463;
+  border-width: 3px;
+  /* background-color: #0000FF; */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px
+  }
+}
+
+.start {
+  font-size: 1.5rem;
+  font-family: "Arvo";
+  text-align: center;
+  color: white;
+  text-shadow: 1px 0 #DA0463;
+  border-width: 3px;
+  border-color: white;
+  background-color: black;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.name {
+  height: 40px;
+  width: 350px;
+  font-size: 1.8rem;
+  font-family: "Arvo";
+}
+
+.quiz {
+  text-align: center;
+}
+
+.enter {
+  color: white;
+  text-shadow: 1px 0 #DA0463;
+  font-size: 1rem;
+  font-family: "Arvo";
+}
+
+.submit {
+  font-size: 1.5rem;
+  font-family: "Arvo";
+  text-align: center;
+  color: white;
+  text-shadow: 1px 0 #DA0463;
+  border-width: 3px;
+  border-color: white;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.end {
+  text-align: center;
+}
+
+.nameing {
+  font-size: 1.5rem;
+  font-family: "Arvo";
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+
+
+
+footer {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #DBEDF3;
+  font-family: "Arvo";
+  text-shadow: 1px 0 #DA0463;
+}
+
+
+.score {
+  font-size: 2.5rem;
+  font-family: "Arvo";
+  text-align: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.scoring {
+  font-size: 1.5rem;
+  font-family: "Arvo";
+  text-align: center;
+  color: white;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.stat
+{
+  text-align: center;
+}
+
+.ratiocrt
+{
+  font-size: 1.5rem;
+  font-family: "Arvo";
+  text-align: center;
+  color: white;
+}
+
+.crtQns
+{
+  font-size: 1.5rem;
+  font-family: "Arvo";
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width:700px) and (min-width:600px)
+{
+  h1
+  {
+    font-size: 3rem;
+  }
+
+  .corona
+  {
+    height: 120px;
+    width: 160px;
+  }
+
+  .outer-box {
+    height: 350px;
+    width: 420px;
+  }
+
+  .inner-box {
+    font-size: 1.25rem;
+  }
+
+  .prev, .next
+  {
+    padding: 12px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+
+}
+
+
+
+@media (max-width:600px)
+{
+  h1
+  {
+    font-size: 3rem;
+  }
+
+  .corona
+  {
+    height: 120px;
+    width: 160px;
+  }
+
+  .outer-box {
+    height: 250px;
+    width: 300px;
+  }
+
+  .inner-box {
+    font-size: 1rem;
+  }
+
+  .prev, .next
+  {
+    padding: 12px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 0.70rem;
+  }
+
+
+  .highScore
+  {
+    height: 160px;
+    width: 400px;
+    /* border: solid;
+    border-width: 3px;
+    border-color: black; */
+  }
+
+}
